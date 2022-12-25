@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 declare var particlesJS: any;
+
 @Component({
-  selector: 'sybrex-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'learning_the_angular_cli';
+export class AppComponent implements OnInit {
+  title = 'grid-dashboard';
 
   ngOnInit() {
     particlesJS.load('particles', 'assets/particles.json', () => {
-      console.log('particles loaded');
+      console.log('callback - particles.js config loaded');
     });
   }
 }
