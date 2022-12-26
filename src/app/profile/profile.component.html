@@ -1,5 +1,5 @@
 <div *ngIf="afAuth.user | async as user">
   <p>Name: {{ user.displayName }}</p>
-  <p>Name: {{ user.email }}</p>
-  <p>Name: {{ user.uid }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>UID: {{ user.uid }}</p>
 </div>
