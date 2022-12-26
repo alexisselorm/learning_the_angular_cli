@@ -9,6 +9,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { AngularFireAuthGuard } from '@angular/fire/compat/auth-guard';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, ProfileComponent],
@@ -19,7 +20,7 @@ import { ProfileComponent } from './profile/profile.component';
     AngularFireAuthModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AngularFireAuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
