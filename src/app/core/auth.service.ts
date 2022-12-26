@@ -13,6 +13,6 @@ export class AuthService {
     this.router.navigate(['']);
   }
   authIsLoggedIn() {
-    return !!this.afAuth.currentUser;
+    // return !!this.afAuth.currentUser;
   }
 }
